@@ -1,0 +1,70 @@
+.cv-section {
+  padding: 10px 0;
+  color: var(--lightest-slate);
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.cv-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: "NTR",sans-serif;;
+}
+
+.cv-description {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  font-family: "NTR",sans-serif;;
+}
+
+.cv-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: var(--lightest-slate);
+  font-family: "NTR",sans-serif;;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cv-section {
+    padding: 60px 0;
+  }
+  
+  .cv-title {
+    font-size: 2.5rem;
+  }
+  
+  .cv-description {
+    font-size: 1rem;
+  }
+  
+  .cv-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cv-btn {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-title {
+    font-size: 2rem;
+  }
+  
+  .cv-description {
+    font-size: 0.9rem;
+  }
+} 
