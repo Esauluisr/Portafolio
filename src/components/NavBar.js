@@ -1,6 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
 import EmailRounded from '@mui/icons-material/EmailRounded';
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -10,9 +9,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function NavBar() {
   return (
     <div>
-      <Navbar fixed="top" className="navbar navbar-dark bg-dark">
+      <Navbar fixed="top" expand="md" className="navbar navbar-dark bg-dark">
         <Container>
-          <Navbar.Brand href="#">Esau Luis</Navbar.Brand>
+          <Navbar.Brand href="#" exportparts="ms-auto" className="d-flex align-items-center">
+            <img
+              src={require("../logosvg.svg").default}
+              alt="Logo"
+              width="30"
+              height="30"
+              className="me-2"
+              style={{ borderRadius: "50%" }}
+            />
+            Esau Luis
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -34,7 +43,6 @@ function NavBar() {
                 href="/"
                 target="_blank"
               >
-                <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
