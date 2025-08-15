@@ -9,8 +9,8 @@ function CV() {
   const handleDownloadCV = () => {
     // Crear un enlace temporal para descargar el PDF
     const link = document.createElement('a');
-    link.href = "/assets/Esau_Luis_CV.pdf";
-    link.download = 'Esau_Luis_CV.pdf';
+    link.href = "/assets/EsauLuisCV.pdf";
+    link.download = 'EsauLuisCV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -18,7 +18,7 @@ function CV() {
 
   const handleViewCV = () => {
     // Abrir el PDF en una nueva pestaña
-    window.open("/assets/Esau_Luis_CV.pdf", "_blank");
+    window.open("/assets/EsauLuisCV.pdf", "_blank");
   };
 
   return (
